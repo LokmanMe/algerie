@@ -1,0 +1,290 @@
+*{
+	cursor: url('../images/curseur.png'), pointer;
+}
+
+body{														
+	background-color:#ECF0F1;							
+	background-attachment:fixed;						
+	font-family:Garamond;			
+}
+
+.header{													
+	background-image:url("../images/header.jpg");			
+	margin:auto;										
+	height:180px;										
+	width:1200px;										
+}
+.header_histoire{												
+	background-image:url("../images/header1.jpg");	
+	margin:auto;											
+	height:180px;										
+	width:1200px;										
+}
+.header_geographie{											
+	background-image:url("../images/header2.jpg");
+	margin:auto;										
+	height:180px;										
+	width:1200px;										
+}
+.header_culture{												
+	background-image:url("../images/header3.jpg");
+	margin:auto;										
+	height:180px;										
+	width:1200px;										
+}
+.header_news{												
+	background-image:url("../images/header4.jpg");
+	margin:auto;										
+	height:180px;										
+	width:1200px;										
+}
+.header_contact{												
+	background-image:url("../images/header5.jpg");
+	margin:auto;										
+	height:180px;										
+	width:1200px;										
+}
+
+.base{														
+	background-image:url("../images/contact_background.jpg");	
+	margin:auto;											
+	height:fill;											
+	width:1200px;											
+	border-radius:5px;										
+	padding-top:15px;										
+	padding-bottom:1px;			
+	box-shadow:  1px 2px 6px 1px rgba(0, 0, 0, 0.7); 								
+}	
+footer{														
+	background-color:white;									
+	color:#1d0b33 ;											
+	min-height:20px;										
+	width:1170px;											
+	margin:auto;										
+	margin-bottom:25px;									
+	border-radius:5px;									
+	text-align:center;									
+}
+
+#conteneur{													
+	display:flex;											
+	width:1200px;											
+	height:30px;
+	margin:auto;										
+	margin-bottom:10px;																							
+}	
+.element0{										
+	background-color:black;
+	width:20%;										
+	border-bottom:2.5px solid white;				
+	border-top:2.5px solid white;	
+
+	border-left:2.5px solid white;				
+	border-right:2.5px solid white;	
+	
+	text-align:center;		
+	padding-top: 2px;						
+	box-shadow:  1px 2px 6px 1px rgba(0, 0, 0, 0.7); 			
+}
+.lien{
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	margin-left: 0.5px; margin-right: 0.5px;
+	border-top-right-radius:8px;
+	border-bottom-right-radius:8px;
+}
+
+
+
+a{															
+	color:white;
+	font-family:lato;										
+	text-decoration:none;									
+	font-size:16px;											
+}
+a:visited{												
+	color:white;											
+}
+a:hover{												
+	color:white;												
+	background-color: rgba(90, 90, 90, 0.95);
+}
+
+.onetwothree{
+	font-weight:bold;
+	color:black;
+	float:left;
+}
+
+.lien:hover{background-color: rgba(0, 90, 0, 0.95);}	/* 010 */
+
+
+hr{															
+	width:75%;											
+	margin-top:16px;									
+}
+.court{
+	width:25%;											
+	margin-top:16px;
+}
+
+br{														
+	font-size:20px;										
+}
+
+h1{														
+	font-size:52px;											
+	font-family:Times;										
+	text-align:center;										
+	color:black;											
+	background-color:white;								
+	border-top: 1px solid green;					
+	border-bottom: 1px solid green;						
+}
+h4{						
+	font-size:19px;
+	font-weight:bold;								
+	text-align:center;									
+}
+h3{		
+	font-size:19px;
+	font-weight:bold;												
+}
+h2{														
+	text-align:center;								
+	font-size:26px;									
+}
+p{														
+	text-align:justify;									
+	font-size:17px;	
+	width:80%;
+	margin:auto;
+}
+
+
+.contientarticle{											
+	background-color:white;									
+	min-height:300px;									
+	width:1150px;										
+	margin:auto;
+	margin-bottom:25px;
+	border-radius:5px;
+	padding:10px 10px 10px 10px;
+}
+.contientimages{
+	margin-left:115px;
+	margin-right:115px;
+	overflow: auto;
+}
+.image{
+	background-color:white;
+	width:45%;
+	border: 2px solid darkgreen;
+	border-radius:5px;
+	
+
+}
+.contienttexte{
+	width:95%;
+	margin:auto;
+}
+.small{
+	width:50%;
+	margin:auto;
+}
+
+.titre{														
+	color:black;							
+	font-family:Garamond;					
+	font-size:32px;						
+	background-color: white;
+}
+.titre:hover{										
+	color:black;									
+	background-color: white;
+	
+}
+.titre:visited{									
+	color:black;									
+	background-color: white;
+}
+
+::selection {									/*Pour que quand on sélectionne c'est + joli*/
+  color: #005000; background: #CEF6CE;
+} 
+
+a img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+		border: 3px solid green;
+		border-radius: 15px;
+}
+a img:hover {
+	opacity: .5;
+	transform: translatey(4px);
+}
+
+:focus
+{
+    background-color: #CEF6CE;
+}
+
+
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+.slider:hover {
+    opacity: 1;
+
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 64px;
+    height: 90px;
+    background: url("../images/massi.png") no-repeat;
+    cursor: pointer;
+}
+.slider::-webkit-slider-thumb:hover {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 64px;
+    height: 90px;
+    background: url("../images/massi2.png") no-repeat;
+    cursor: pointer;
+}
+
+.bouton{
+	height: 36px;
+	width: 100px;
+    border-color:black;
+	background:linear-gradient(green, darkgreen);
+	text-shadow: 0px 1px 0px black;
+    color: white;	
+	margin:4px 4px 4px 4px ;
+	border-radius:12px 0 12px 0;
+	box-shadow:1px 1px 3px #aaa;
+}
+.bouton:hover{
+    transition: 0.4s;
+    cursor: pointer;
+    background: linear-gradient(darkgreen, green);
+}
+.bouton:active{
+    background:black;
+}
+
+	
