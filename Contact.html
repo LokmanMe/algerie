@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html>																				
+	<head>		
+		<link rel="icon" type="image/png" href="images/onglet.png" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/rubrique.css">					
+		<meta charset="utf-8" />													
+		<title>>> Contact <<</title>											
+		<META NAME="ROBOTS" content="none,noarchive">
+		<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>																			
+		<header>																	
+			<div class="header_contact">	</div>											
+			<div id="conteneur">												
+				<a 	class="element0 lien" 			href="index.html">	<div>	Accueil		</div>				</a>
+				<a 	class="element0 lien" 			href="Histoire.html">	<div>	Histoire	</div>				</a>	
+				<a 	class="element0 lien" 			href="Geographie.html">	<div>	Géographie	</div>				</a>	
+				<a 	class="element0 lien" 			href="Culture.html">	<div>	Culture	</div>				</a>		
+				<a 	class="element0 lien" 			href="News.html">		<div>	News		</div>				</a>
+				<a 	class="element0 lien" 			href="Contact.html">	<div>	Contact	</div>				</a>
+			</div>
+		</header>
+
+		<div class="base">  												
+			<div class="contientarticle" style="width:50%">														
+				<div class="contienttexte">
+				
+				
+					<form name=formulaire>
+					
+					<fieldset>
+					<legend>Identité</legend>
+					
+					<h4>    
+					<input type="radio" name="msieudame" value="Monsieur" id="Monsieur" required /> <label for="Monsieur">Monsieur     </label>
+					<input type="radio" name="msieudame" value="Madame" id="Madame" required /> <label for="Madame">Madame     </label>
+					<input type="radio" name="msieudame" value="Mademoiselle" id="Mademoiselle" required /> <label for="Mademoiselle">Mademoiselle</label><br><br></h4>
+
+					<h4><label for="nom">Nom : </label> <input type="text" id="nom" class="champ" required /><br><br></h4>
+					<h4><label for="prenom">Prénom : </label> <input type="text" id="prenom" class="champ" required /><br><br></h4>
+<!--					<h4><label for="date">Date de naissance : </label> <input type="date" id="date" class="champ" required /><br><br></h4>			-->
+
+					<h4>Sexe :     
+					<input type="radio" name="gender" value="homme" id="homme" required /> <label for="homme">Homme     </label>
+					<input type="radio" name="gender" value="femme" id="femme" required /> <label for="femme">Femme</label><br><br></h4>
+
+					<h4><label for="pays">Nationalité : </label>
+					<select name="pays" id="pays">
+					   <option value="algerie">Algérienne</option>
+					   <option value="notalgerie">Pas Algérienne</option>
+					</select><br><br></h4>
+
+					<h4><label for="mail">E-mail : </label> <input type="email" id="mail" class="champ" style="width:300px" required /><br><br></h4>
+					</fieldset>	
+					
+					<fieldset>
+					<legend>Goûts et couleurs</legend>
+						<h4><label for="myRange">A quel point avez-vous aimé le site ? </label> </h4>
+						
+						
+						<div class="slidecontainer">
+							<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+						</div>
+						<span>Pas du tout</span>	
+						<span style="float:right">Beaucoup</span>
+						
+						<h4><label for="color">Quelle est votre couleur préférée ? </label> 
+							<input type="color" id="color1" class="champ" value="#006233"/><br><br>
+							
+						<h4>Cochez vos plats préférés :<br>
+					   <label for="plat1">Couscous — </label>				<input type="checkbox" name="plat" value="plat1" id="plat1" /> 
+					   <label for="plat2"><br>Tajine zitoun — </label>		<input type="checkbox" name="plat" value="plat1" id="plat2" /> 
+					   <label for="plat3"><br>Tlitli — </label>				<input type="checkbox" name="plat" value="plat3" id="plat3" /> 
+					   <label for="plat4"><br>Chekchouka — </label>			<input type="checkbox" name="plat" value="plat4" id="plat4" /> 
+					   <label for="plat5"><br>L3dess — </label>				<input type="checkbox" name="plat" value="plat5" id="plat5" /> 
+					   <label for="plat6"><br>Tchktchouka — </label>			<input type="checkbox" name="plat" value="plat6" id="plat6" /> <br><br></h4>	
+							
+						<h4><label for="message">Commentaire : <br></label><textarea id="message" class="champ" rows="8" cols="50"></textarea><br></h4>
+					</fieldset>	<br>
+					
+						
+						
+						<div style="width:220px; margin:auto"> 
+							<input class="bouton" type="submit" id="submit" value="Envoyer" />
+							<input class="bouton" type="reset" id="effacer" value="Effacer" /> 
+						</div>
+						
+						
+						
+						
+					</form>
+				
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> <!--jQuery-->
+					
+					
+					<audio id="leszommes" src="images\les zommes.mp3" preload="auto"></audio>
+					<audio id="lesfames" src="images\les femmes.mp3" preload="auto"></audio>
+					<script>
+						$(function(){
+							$('#homme').on('click', function(){ 		//Quand on clique sur #homme, le son "leszommes" joue
+							document.getElementById('leszommes').play();
+							});
+						});
+						$(function(){
+							$('#femme').on('click', function(){ 		//Quand on clique sur #femme, le son "lesfames" joue
+							document.getElementById('lesfames').play();
+							});
+						});
+						
+						var submit = document.getElementById("submit");
+
+						submit.onclick = loginAlert;
+
+						function loginAlert()
+						{
+						
+							var nom = document.getElementById("nom").value;
+							var prenom = document.getElementById("prenom").value;
+							
+							if (document.getElementById('Monsieur').checked) {
+							var msieudame = "Monsieur";
+							var suffixe = "";
+							}
+							else if (document.getElementById('Madame').checked) {
+							var msieudame = "Madame";
+							var suffixe = "ne";
+							}
+							else if (document.getElementById('Mademoiselle').checked) {
+							var msieudame = "Mademoiselle";
+							var suffixe = "ne";
+							}
+							
+							var pays = document.getElementById("pays").value;
+							
+							if (pays == "algerie") {
+							var login_input = "Bonjour " + msieudame + " " + nom + " " + prenom + "\n \n" + "Félicitation, vous êtes algérien" + suffixe + " !"; 
+							}
+							else if (pays == "notalgerie") {
+							var login_input = "Bonjour " + msieudame + " " + nom + " " + prenom + "\n \n" + "Malheureusement, vous n'êtes pas algérien" + suffixe + " !"; 
+							}
+							
+							alert(login_input);
+						}
+						
+					</script>
+					
+				</div>
+			</div>
+
+			<footer style="width:52%">												
+				<span>Lokman - 2018</span>
+			</footer>
+		</div>
+	</body>
+</html>

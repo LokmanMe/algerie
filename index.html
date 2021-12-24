@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>																				
+	<head>	
+		<link rel="icon" type="image/png" href="images/onglet.png" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/rubrique.css">					
+		<meta charset="utf-8" />													
+		<title>>> Accueil <<</title>												
+		<META NAME="ROBOTS" content="none,noarchive">
+		<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>		<!--Pour importer la police "Lato"-->
+
+		
+		<audio id="lalgire" src="audio\lalgire.mp3" preload="auto" autoplay></audio>
+		<a class="onetwothree" href="javascript:play_single_sound();" >PLAY</a>
+		<script type="text/javascript">
+			function play_single_sound() {
+			document.getElementById('lalgire').play();
+			}
+		</script>
+		<br>
+		<a class="onetwothree" href="javascript:pauseAudio();">PAUSE</a>
+		<script type="text/javascript">
+			function pauseAudio() {
+			document.getElementById('lalgire').pause();
+			}
+		</script>
+		
+	</head>
+
+	<body>																			
+		<header style="margin-top:-21px">																	
+			<div class="header">	</div>											
+			<div id="conteneur">												
+				<a 	class="element0 lien" 			href="index.html">	<div>	Accueil		</div>				</a>
+				<a 	class="element0 lien" 			href="Histoire.html">	<div>	Histoire	</div>				</a>	
+				<a 	class="element0 lien" 			href="Geographie.html">	<div>	Géographie	</div>				</a>	
+				<a 	class="element0 lien" 			href="Culture.html">	<div>	Culture		</div>				</a>		
+				<a 	class="element0 lien" 			href="News.html">		<div>	News	</div>				</a>
+				<a 	class="element0 lien" 			href="Contact.html">	<div>	Contact	</div>				</a>
+			</div>
+		</header>
+
+		<div class="base"> 										
+			<h1>L'ALGÉRIE</h1> 																					
+	
+			<div class="contientarticle">							
+				<hr>												
+				<h2><a class="titre" href="Histoire.html">Histoire</h2></a>
+				<center><a class="titre" href="Histoire.html"> <img src="images/header1.jpg" style="width:85%" title="Crédit photo : Moi-même"></img></center></a>
+				
+				<hr>	
+				<h2><a class="titre" href="Geographie.html">Géographie</h2></a>
+				<center><a class="titre" href="Geographie.html"> <img src="images/header2.jpg" style="width:85%" title="Crédit photo : raandree - Libre de droit"></img></center></a>
+				
+				<hr>
+				<h2><a class="titre" href="Culture.html">Culture</h2></a>
+				<center><a class="titre" href="Culture.html"> <img src="images/header3.jpg" style="width:85%" title="Crédit photo : Gruban - Libre de droit"></img></center></a>
+
+				<hr>												
+				<h2><a class="titre" href="News.html">News</h2></a>	
+				<center><a class="titre" href="News.html"> <img src="images/header4.jpg" style="width:85%" title="Source : El Watan - Domaine public"></img></center></a>	
+				<hr>
+				
+			</div>
+			
+			<footer>												
+				<span>Lokman - 2018</span>
+			</footer>
+		</div>
+	</body>
+</html>
